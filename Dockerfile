@@ -2,9 +2,8 @@ FROM node:14.15.0-alpine
 
 WORKDIR /frontend
 
-COPY . /frontend
+COPY package*.json ./
 RUN npm install
-
-RUN ls
+COPY . .
 
 CMD ["npm", "run", "serve"]

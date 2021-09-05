@@ -8,5 +8,8 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
+    volumes:
+      - '.:/frontend'
+      - '/frontend/node_modules'
     ports:
       - 8080:8080

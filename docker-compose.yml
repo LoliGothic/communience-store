@@ -1,0 +1,12 @@
+version: "3"
+services:
+  prototype:
+    container_name: "prototype"
+    volumes:
+      - .:/frontend
+    tty: true
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 8080:8080

@@ -1,24 +1,15 @@
 # prototype
 
-## Project setup
 ```
-npm install
+docker-compose up --build
 ```
-
-### Compiles and hot-reloads for development
+を実行して
 ```
-npm run serve
+prototype    |   App running at:
+prototype    |   - Local:   http://localhost:8080/
 ```
-
-### Compiles and minifies for production
+って表示されたら  
 ```
-npm run build
+http://localhost:8080
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+にアクセスする

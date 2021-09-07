@@ -1,7 +1,6 @@
 # prototype
 
 ```
-b
 docker-compose up --build
 ```
 を実行して

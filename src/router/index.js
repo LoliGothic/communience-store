@@ -28,7 +28,7 @@ const routes = [
   {
     path: '/friends-card',
     name: 'friends-card',
-    component: Card_FRIENDS
+    component:Card_FRIENDS
   },
 ]
 

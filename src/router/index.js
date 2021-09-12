@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Test from '../views/Test.vue'
 import Organizer from '../views/Organizer.vue'
+import Participant from '../views/Participant.vue'
 
 Vue.use(VueRouter)
 
@@ -30,6 +31,11 @@ const routes = [
     name: 'Organizer',
     component: Organizer
   },
+  {
+    path: '/participant',
+    name: 'Participant',
+    component: Participant
+  },
 ]
 
 const router = new VueRouter({
@@ -39,3 +45,4 @@ const router = new VueRouter({
 })
 
 export default router
+

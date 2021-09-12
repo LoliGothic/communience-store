@@ -11,7 +11,7 @@
                   :key="item.header"
                   class="text-h3"
                 >
-                  <div v-if="item.hidden" class="text-center">
+                  <div v-if="item.part_hidden" class="text-center">
                     <v-btn depressed color="primary" @click="done(index)"> 名前：解答 </v-btn>
                   </div>
 
@@ -34,7 +34,7 @@
                     v-html="item.ord_title"
                   ></v-list-item-content>
                   <v-list-item-content
-                    v-if="item.hidden"
+                    v-if="item.part_hidden"
                   >
                     <v-btn depressed color="primary" @click="done(index)"> 解答 </v-btn>
                   </v-list-item-content>
@@ -61,7 +61,7 @@ export default {
   },
   methods: {
     done(num) {
-      this.$store.commit("toggleHidden", num)
+      this.$store.commit("openContents", num)
     },
   },
 };

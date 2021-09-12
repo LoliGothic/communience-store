@@ -11,7 +11,7 @@
                   :key="item.header"
                   class="text-h3"
                 >
-                  <div v-if="item.hidden" class="text-center">
+                  <div v-if="item.org_hidden" class="text-center">
                     <s>{{ item.header }}</s>
                     <v-btn rounded color="primary" dark @click="done(index)">
                       かくす
@@ -36,7 +36,7 @@
                     </v-icon>
                   </v-list-item-avatar>
                   <v-list-item-title
-                    v-if="item.hidden"
+                    v-if="item.org_hidden"
                     v-html="item.hidden_title"
                   ></v-list-item-title>
                   <v-list-item-title

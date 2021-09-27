@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Test from '../views/Test.vue'
 import Card_MY from '../views/MY-intro-card.vue'
-import Edit_page from '../views/Card-edit.vue'
+// import Edit_page from '../views/Card-edit.vue'
 
 Vue.use(VueRouter)
 
@@ -31,11 +31,11 @@ const routes = [
     name: 'my-card',
     component: Card_MY
   },
-  {
-    path: '/edit-page',
-    name: 'edit-page',
-    component: Edit_page
-  },
+  // {
+  //   path: '/edit-page',
+  //   name: 'edit-page',
+  //   component: Edit_page
+  // },
 
 ]
 

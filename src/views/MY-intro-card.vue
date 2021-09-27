@@ -16,12 +16,16 @@
                 dark
                 icon
                 class = "ml-4 mt-3"
+                id = "button"
+                to = "/edit-page"
               >
+                <!-- @click="turnEdit" -->
                 <v-icon>mdi-pencil</v-icon>
+
               </v-btn>
             </v-card-edit>
           </v-img>
-          <v-card-title class = "d-flex flex-column align-center justify-space-between">
+          <v-name class = "d-flex flex-column align-center justify-space-between">
             <div class="d-flex justify-between">
             <div class="text-h4 mb-2">
               Friend's name here.
@@ -34,7 +38,7 @@
                 </div>
             </div>
             
-          </v-card-title>
+          </v-name>
           <div
             class="px-4 grey--text"
 
@@ -145,37 +149,41 @@
 </template>
 
 <script>
+  // import Edit from "./Card-edit.vue"
   export default {
-    methods: {
-      alarm () {
-        alert('Turning on alarm...')
-      },
-      blinds () {
-        alert('Toggling Blinds...')
-      },
-      lights () {
-        alert('Toggling lights...')
-      },
-    },
+    // props:["result"],
+    // components:{
+    //   'Edit':Edit
+    // },
      data: () => ({
-      items_1: [
-        {
-          action: 'mdi-account-heart-outline',
-          items: [{ title: 'Soccer'}, {title: 'Game'}, {title: 'Movie'}],
-          title: 'Favorits',
-        },
-       ],
-      items_2: [
-        {
-          action: 'mdi-account-supervisor-outline',
-          items: [{ title: 'Marie'}, {title: 'Tom'}, {title: 'Mia'}],
-          title: 'Close Friends',
-        },
-       
-        
-      ],
-       
-    }),
+       items_1: [
+         {
+           action: 'mdi-account-heart-outline',
+           items: [{ title: 'Soccer'}, {title: 'Game'}, {title: 'Movie'}],
+           title: 'Favorits',
+         },
+        ],
+       items_2: [
+         {
+           action: 'mdi-account-supervisor-outline',
+           items: [{ title: 'Marie'}, {title: 'Tom'}, {title: 'Mia'}],
+           title: 'Close Friends',
+         },
+       ], 
+     }),
+     methods: {
+     tuenEdit(){
+        this.$router.push('./Card-edit.vue')
+    }
+  },
+      // methods: {
+      //   setContentID(contentID) {
+      //     console.log(contentID)
+      //     this.$store.commit("setContentID", contentID)
+      //   }
+      // },
+    
+    
   }
 </script>
 

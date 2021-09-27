@@ -16,7 +16,7 @@
           <v-card-title class = "d-flex flex-column align-center justify-space-between">
             <div class="d-flex justify-between">
             <div class="text-h4 mb-2">
-              Friend's name here.
+              My name is here.
             </div>
               <v-btn
           class="ma-2"

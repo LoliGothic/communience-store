@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Test from '../views/Test.vue'
 import Card_MY from '../views/MY-intro-card.vue'
+import Edit from '../views/Edit-page.vue'
 
 Vue.use(VueRouter)
 
@@ -29,6 +30,11 @@ const routes = [
     path: '/my-card',
     name: 'my-card',
     component: Card_MY
+  },
+  {
+    path: '/edit',
+    name: 'edit',
+    component: Edit
   },
 ]
 

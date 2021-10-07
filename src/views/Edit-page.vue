@@ -23,9 +23,8 @@
                   bottom
                   left
                   class="mt-3 ml-3"
-                  to = "/edit"
                 >
-                  <v-icon>mdi-pencil</v-icon>
+                  <v-icon>SAVE</v-icon>
                 </v-btn>
               </v-fab-transition>
           </v-img>
@@ -35,15 +34,23 @@
 
               <v-card-title class = "d-flex flex-column align-center justify-space-between">
                 <div class="d-flex justify-between">
-                <div class="text-h4 mb-2">
-                  友達のカード
-                </div>
-                  
+                <v-text-field
+            v-model="message1"
+            label="名前"
+            clearable
+            class="text-h4 mb-2"
+          ></v-text-field>
                 </div>
                 <div class="d-flex justify-space-between">
                     <div class="text-h6 font-weight-regular grey--text">
-                      ニックネーム
+                      
                     </div> 
+                     <v-text-field
+                v-model="message1"
+                label="ニックネーム"
+                clearable
+                class="text-h6 mb-2"
+          ></v-text-field>
                 </div>
                 
               </v-card-title>
@@ -60,8 +67,12 @@
                 </v-avatar>
               </div>
 
-                <div> 自己紹介をしてください <br>
-                  ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</div>
+                <v-textarea
+          name="input-7-1"
+          label="Default style"
+          value="自己紹介の編集"
+          hint="Hint text"
+        ></v-textarea>
               </div>
 
               <v-divider class="mt-6 mx-4"></v-divider>

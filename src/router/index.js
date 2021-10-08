@@ -41,6 +41,7 @@ const routes = [
     name: 'Participant',
     component: Participant
   },
+  {
     path: '/friends-card',
     name: 'friends-card',
     component:Card_FRIENDS
@@ -55,6 +56,7 @@ const routes = [
     name: 'edit',
     component: Edit
   },
+  {
     path: '/roomform',
     name: 'RoomForm',
     component: RoomForm

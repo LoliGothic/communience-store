@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Test from '../views/Test.vue'
 import RoomList from '../views/RoomList.vue'
+import EventList from '../views/EventList.vue'
 
 Vue.use(VueRouter)
 
@@ -30,6 +31,11 @@ const routes = [
     name: 'RoomList',
     component: RoomList
   },
+  {
+    path: '/eventlist',
+    name: 'EventList',
+    component: EventList
+  }
 ]
 
 const router = new VueRouter({

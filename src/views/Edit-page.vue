@@ -24,7 +24,7 @@
                   left
                   class="mt-3 ml-3"
                 >
-                  <v-icon>SAVE</v-icon>
+                  <v-icon>mdi-content-save-all-outline</v-icon>
                 </v-btn>
               </v-fab-transition>
           </v-img>
@@ -40,16 +40,14 @@
             clearable
             class="text-h4 mb-2"
           ></v-text-field>
+                  
                 </div>
                 <div class="d-flex justify-space-between">
-                    <div class="text-h6 font-weight-regular grey--text">
-                      
-                    </div> 
                      <v-text-field
                 v-model="message1"
                 label="ニックネーム"
                 clearable
-                class="text-h6 mb-2"
+                class="text-h6 mb-2 font-weight-regular grey--tex"
           ></v-text-field>
                 </div>
                 
@@ -67,12 +65,15 @@
                 </v-avatar>
               </div>
 
-                <v-textarea
-          name="input-7-1"
-          label="Default style"
-          value="自己紹介の編集"
-          hint="Hint text"
-        ></v-textarea>
+                <div> 
+                   <v-textarea
+      clearable
+      clear-icon="mdi-close-circle"
+      label="自己紹介の編集"
+      value="This is clearable text."
+      style="width: 450px;"
+    ></v-textarea>
+                </div>
               </div>
 
               <v-divider class="mt-6 mx-4"></v-divider>
@@ -208,6 +209,9 @@
   .footer{
     font-size: 0.8rem;
     font-weight: light;
+  }
+  v-textarea{
+    width: 450px;
   }
 
 </style>

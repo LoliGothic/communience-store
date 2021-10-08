@@ -36,7 +36,7 @@
               <v-card-title class = "d-flex flex-column align-center justify-space-between">
                 <div class="d-flex justify-between">
                 <div class="text-h4 mb-2">
-                  友達のカード
+                  自分のカード
                 </div>
                   
                 </div>
@@ -60,7 +60,7 @@
                 </v-avatar>
               </div>
 
-                <div> 自己紹介をしてください <br>
+                <div class="introduction"> 自己紹介をしてみてください <br>
                   ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</div>
               </div>
 
@@ -197,6 +197,9 @@
   .footer{
     font-size: 0.8rem;
     font-weight: light;
+  }
+  .introduction{
+    width: 100%;
   }
 
 </style>

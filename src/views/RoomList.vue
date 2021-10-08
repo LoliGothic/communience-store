@@ -5,7 +5,7 @@
         <p style="font-size: 2em; text-align: center">ルーム一覧</p>
       </v-col>
       <v-col md="1" offset-md="3">
-        <v-btn class="mb-2" fab dark color="indigo">
+        <v-btn class="mb-2" fab dark color="indigo" to="/roomform">
           <v-icon dark> mdi-plus </v-icon>
         </v-btn>
       </v-col>

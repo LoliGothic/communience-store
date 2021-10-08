@@ -2,6 +2,10 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Test from '../views/Test.vue'
+import RoomList from '../views/RoomList.vue'
+import EventList from '../views/EventList.vue'
+import CardList from '../views/CardList.vue'
+import ParticipantsList from '../views/ParticipantsList.vue'
 import Organizer from '../views/Organizer.vue'
 import Participant from '../views/Participant.vue'
 import Card_FRIENDS from '../views/FRIENDS-intro-card.vue'
@@ -30,6 +34,26 @@ const routes = [
     path: '/test',
     name: 'Test',
     component: Test
+  },
+  {
+    path: '/roomlist',
+    name: 'RoomList',
+    component: RoomList
+  },
+  {
+    path: '/eventlist',
+    name: 'EventList',
+    component: EventList
+  },
+  {
+    path: '/cardlist',
+    name: 'CardList',
+    component: CardList
+  },
+  {
+    path: '/participantslist',
+    name: 'ParticipantsList',
+    component: ParticipantsList
   },
   {
     path: '/organizer',

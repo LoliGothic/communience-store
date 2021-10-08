@@ -31,14 +31,24 @@ export default {
   created() {
     this.items.push(
       {
-        title: "イベント(主催者)",
-        subtitle: "イベントページ(主催者側)",
-        link: "/organizer",
+        title: "ルーム一覧",
+        subtitle: "参加しているルーム一覧",
+        link: "/roomlist",
       },
       {
-        title: "イベント(参加者)",
-        subtitle: "イベントページ(参加者側)",
-        link: "/participant",
+        title: "開催中のイベント一覧",
+        subtitle: "現在参加できるイベントの一覧",
+        link: "/eventlist",
+      },
+      {
+        title: "自分のカード",
+        subtitle: "自分の自己紹介カード",
+        link: "/my-card",
+      },
+      {
+        title: "交換カード一覧",
+        subtitle: "これまでに交換した自己紹介カード一覧",
+        link: "/cardlist",
       }
     );
   },

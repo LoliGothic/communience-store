@@ -29,31 +29,18 @@
 <script>
 export default {
   created() {
-    this.items.push({
-        title: "Home",
-        subtitle: "Home(テンプレ)",
-        link: "/",
-    },
-    {
-        title: "About",
-        subtitle: "About(テンプレ)",
-        link: "/about",
-    },
-    {
-        title: "Test",
-        subtitle: "Test(追加してみた)",
-        link: "/test",
-    },
-    {
-      title: "イベント(主催者)",
+    this.items.push(
+      {
+        title: "イベント(主催者)",
         subtitle: "イベントページ(主催者側)",
         link: "/organizer",
-    },
-    {
+      },
+      {
         title: "イベント(参加者)",
         subtitle: "イベントページ(参加者側)",
         link: "/participant",
-    },);
+      }
+    );
   },
   data() {
     return {
@@ -63,7 +50,7 @@ export default {
   },
   methods: {
     to(link) {
-        this.$router.push({ path: link });
+      this.$router.push({ path: link });
     },
     drawerFlip() {
       this.drawer = !this.drawer;

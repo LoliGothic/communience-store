@@ -1,5 +1,5 @@
 <template>
-  
+
  <v-container class="grey lighten-5">
     <v-row
       v-for="j in 6"
@@ -12,13 +12,15 @@
 
         
       >
-        <v-card
+        
+        <v-btn
+          elevation="2"
           class="pa-2"
           outlined
           tile
         >
           ルーム {{ k+(j-1)*2 }}
-        </v-card>
+        </v-btn>
       </v-col>
     </v-row>
   </v-container>

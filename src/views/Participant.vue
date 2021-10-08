@@ -3,7 +3,7 @@
 </template>
 
 <script>
-  import participant from '../components/Participant'
+  import participant from '../components/EventPages/Participant'
   export default {
     name: 'Participant',
     components: {

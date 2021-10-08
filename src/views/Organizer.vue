@@ -3,7 +3,7 @@
 </template>
 
 <script>
-  import organizer from '../components/Organizer'
+  import organizer from '../components/EventPages/Organizer'
 
   export default {
     name: 'Organizer',

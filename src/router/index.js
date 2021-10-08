@@ -5,7 +5,8 @@ import Test from '../views/Test.vue'
 import Card_FRIENDS from '../views/FRIENDS-intro-card.vue'
 import Card_MY from '../views/MY-intro-card.vue'
 import Edit from '../views/Edit-page.vue'
-
+import RoomForm from '../views/RoomForm.vue'
+import RoomInvite from '../views/RoomInvite.vue'
 
 Vue.use(VueRouter)
 
@@ -42,6 +43,15 @@ const routes = [
     path: '/edit',
     name: 'edit',
     component: Edit
+  },
+    path: '/roomform',
+    name: 'RoomForm',
+    component: RoomForm
+  },
+  {
+    path: '/roominvite',
+    name: 'RoomInvite',
+    component: RoomInvite
   },
 ]
 

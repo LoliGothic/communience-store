@@ -12,7 +12,7 @@
     </v-row>
     <v-row v-for="j in 3" :key="j">
       <v-col v-for="k in 2" :key="k" md="6">
-        <v-btn block elevation="2" class="pa-2" x-large outlined tile>
+        <v-btn block elevation="2" class="pa-2" x-large outlined tile @click="to(RoomName[k + (j - 1) * 2 - 1])">
           {{ RoomName[k + (j - 1) * 2 - 1] }}
         </v-btn>
       </v-col>
@@ -33,7 +33,12 @@ export default {
         "情報システム実験",
       ]
     }
-  }
+  },
+  methods: {
+    to(param) {
+      this.$router.push({ path: "/participantslist?roomname="+param });
+    },
+  },
 }
 </script>
 

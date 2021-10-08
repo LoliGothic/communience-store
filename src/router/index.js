@@ -2,6 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Test from '../views/Test.vue'
+import Organizer from '../views/Organizer.vue'
+import Participant from '../views/Participant.vue'
 import Card_FRIENDS from '../views/FRIENDS-intro-card.vue'
 import Card_MY from '../views/MY-intro-card.vue'
 import Edit from '../views/Edit-page.vue'
@@ -30,6 +32,15 @@ const routes = [
     component: Test
   },
   {
+    path: '/organizer',
+    name: 'Organizer',
+    component: Organizer
+  },
+  {
+    path: '/participant',
+    name: 'Participant',
+    component: Participant
+  },
     path: '/friends-card',
     name: 'friends-card',
     component:Card_FRIENDS
@@ -62,3 +73,4 @@ const router = new VueRouter({
 })
 
 export default router
+

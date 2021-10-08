@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Test from '../views/Test.vue'
 import RoomList from '../views/RoomList.vue'
 import EventList from '../views/EventList.vue'
+import CardList from '../views/CardList.vue'
 
 Vue.use(VueRouter)
 
@@ -35,6 +36,11 @@ const routes = [
     path: '/eventlist',
     name: 'EventList',
     component: EventList
+  },
+  {
+    path: '/cardlist',
+    name: 'CardList',
+    component: CardList
   }
 ]
 

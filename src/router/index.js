@@ -2,6 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Test from '../views/Test.vue'
+import RoomForm from '../views/RoomForm.vue'
+import RoomInvite from '../views/RoomInvite.vue'
 
 Vue.use(VueRouter)
 
@@ -23,6 +25,16 @@ const routes = [
     path: '/test',
     name: 'Test',
     component: Test
+  },
+  {
+    path: '/roomform',
+    name: 'RoomForm',
+    component: RoomForm
+  },
+  {
+    path: '/roominvite',
+    name: 'RoomInvite',
+    component: RoomInvite
   },
 ]
 

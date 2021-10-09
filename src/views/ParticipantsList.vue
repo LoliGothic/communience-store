@@ -17,14 +17,14 @@
             <v-container>
               <v-row>
                 <v-col md="12" align="center">
-                  <v-btn depressed color="primary" block x-large @click="dialog = false">
+                  <v-btn depressed color="primary" block x-large @click="dialog = false" to="/organizer">
                     イベント開催
                   </v-btn>
                 </v-col>
               </v-row>
               <v-row>
                 <v-col md="12" align="center">
-                  <v-btn depressed color="teal" block x-large dark @click="dialog = false">
+                  <v-btn depressed color="teal" block x-large dark @click="dialog = false" to="/roominvite">
                     メンバー招待
                   </v-btn>
                 </v-col>

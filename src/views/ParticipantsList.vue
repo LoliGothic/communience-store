@@ -54,7 +54,7 @@ export default {
   data() {
     return {
       dialog: false,
-      ParticipantName: ["田中太郎", "岡田花子", "山崎秀樹", "斉藤大地"],
+      ParticipantName: ["佐藤武士", "岡田花子", "山崎秀樹", "斉藤大地"],
     };
   },
 };

@@ -36,7 +36,7 @@
               <v-card-title class = "d-flex flex-column align-center justify-space-between">
                 <div class="d-flex justify-between">
                 <div class="text-h4 mb-2">
-                  自分のカード
+                  田中太郎
                 </div>
                   
                 </div>

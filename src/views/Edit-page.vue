@@ -23,6 +23,7 @@
                   bottom
                   left
                   class="mt-3 ml-3"
+                  to="my-card"
                 >
                   <v-icon>mdi-content-save-all-outline</v-icon>
                 </v-btn>

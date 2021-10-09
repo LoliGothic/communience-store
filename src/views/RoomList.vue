@@ -10,13 +10,40 @@
         </v-btn>
       </v-col>
     </v-row>
-    <v-row v-for="j in 3" :key="j">
-      <v-col v-for="k in 2" :key="k" md="6">
-        <v-btn block elevation="2" class="pa-2" x-large outlined tile @click="to(RoomName[k + (j - 1) * 2 - 1])">
-          {{ RoomName[k + (j - 1) * 2 - 1] }}
-        </v-btn>
-      </v-col>
-    </v-row>
+    <template v-if="$route.query.onlyowner">
+      <v-row>
+        <v-col md="6">
+          <v-btn
+            block
+            elevation="2"
+            class="pa-2"
+            x-large
+            outlined
+            tile
+            @click="to('SCLA')"
+          >
+            SCLA
+          </v-btn>
+        </v-col>
+      </v-row>
+    </template>
+    <template v-else>
+      <v-row v-for="j in 3" :key="j">
+        <v-col v-for="k in 2" :key="k" md="6">
+          <v-btn
+            block
+            elevation="2"
+            class="pa-2"
+            x-large
+            outlined
+            tile
+            @click="to(RoomName[k + (j - 1) * 2 - 1])"
+          >
+            {{ RoomName[k + (j - 1) * 2 - 1] }}
+          </v-btn>
+        </v-col>
+      </v-row>
+    </template>
   </v-container>
 </template>
 
@@ -31,14 +58,14 @@ export default {
         "軽音部",
         "英語",
         "情報システム実験",
-      ]
-    }
+      ],
+    };
   },
   methods: {
     to(param) {
-      this.$router.push({ path: "/participantslist?roomname="+param });
+      this.$router.push({ path: "/participantslist?roomname=" + param });
     },
   },
-}
+};
 </script>
 

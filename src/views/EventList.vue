@@ -5,7 +5,7 @@
         <p style="font-size: 1.9em; text-align: center">開催中イベント一覧</p>
       </v-col>
       <v-col md="2" offset-md="2">
-        <v-btn class="mb-2" rounded dark color="indigo">
+        <v-btn class="mb-2" rounded dark color="indigo" to="/roomlist?onlyowner=true">
           イベントを開催
         </v-btn>
       </v-col>

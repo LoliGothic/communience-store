@@ -22,13 +22,8 @@
 </script>
 
 <style>
-    body{
-            background-color: #ffc9d2;
-            text-align: center;
-            font-size: 16px;
-            color: #FFFFFF;
-    }
     #form{
+            text-align: center;
             margin: 30px auto;
             width: 200px;
             height: 90px;
@@ -41,6 +36,7 @@
             color: white;
     }
     #create{
+            text-align: center;
             margin: 0 auto;
             width: 1000px;
             padding-top: 5px;

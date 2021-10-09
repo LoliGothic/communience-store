@@ -22,13 +22,8 @@ export default {
 </script>
 
 <style>
-        body{
-            background-color: #ffc9d2;
-            text-align: center;
-            font-size: 16px;
-            color: #FFFFFF;
-        }
         #invite{
+            text-align: center;
             margin: 30px auto;
             width: 300px;
             height: 100px;

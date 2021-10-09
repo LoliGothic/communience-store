@@ -12,7 +12,7 @@
     </v-row>
     <v-row v-for="j in 1" :key="j">
       <v-col v-for="k in 1" :key="k" md="6">
-        <v-btn block elevation="2" class="pa-2" x-large outlined tile>
+        <v-btn block elevation="2" class="pa-2" x-large outlined tile to="/participant">
           {{ RoomName[k + (j - 1) * 2 - 1] }}
         </v-btn>
       </v-col>

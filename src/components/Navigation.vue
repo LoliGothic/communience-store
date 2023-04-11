@@ -43,7 +43,17 @@ export default {
         title: "Test",
         subtitle: "Test(追加してみた)",
         link: "/test",
-    });
+    },
+    {
+      title: "イベント(主催者)",
+        subtitle: "イベントページ(主催者側)",
+        link: "/organizer",
+    },
+    {
+        title: "イベント(参加者)",
+        subtitle: "イベントページ(参加者側)",
+        link: "/participant",
+    },);
   },
   data() {
     return {

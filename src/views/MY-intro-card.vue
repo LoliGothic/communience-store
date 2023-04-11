@@ -8,145 +8,162 @@
           class="mx-auto mt-20"
           max-width="450"
         >
-          <v-img class="visual"
+          <v-img
             src="https://cdn.vuetifyjs.com/images/cards/house.jpg"
             :aspect-ratio="16/9"
           >
-          
-            <v-fab-transition
-             >
-                <v-btn
-                  color="blue"
-                  fab
-                  dark
-                  small
-                  bottom
-                  left
-                  class="mt-3 ml-3"
-                  to = "/edit"
-                >
-                  <v-icon>mdi-pencil</v-icon>
-                </v-btn>
-              </v-fab-transition>
           </v-img>
-
-
-          <div class="details">
-
-              <v-card-title class = "d-flex flex-column align-center justify-space-between">
-                <div class="d-flex justify-between">
-                <div class="text-h4 mb-2">
-                  田中太郎
+          <v-card-title class = "d-flex flex-column align-center justify-space-between">
+            <div class="d-flex justify-between">
+            <div class="text-h4 mb-2">
+              My name is here.
+            </div>
+              <v-btn
+          class="ma-2"
+          outlined
+          x-small
+          fab
+          color="indigo"
+        >
+          <v-icon>mdi-pencil</v-icon>
+        </v-btn>
+            </div>
+            <div class="d-flex justify-space-between">
+                <div class="text-h6 font-weight-regular grey--text">
+                  Nickname
                 </div>
-                  
-                </div>
-                <div class="d-flex justify-space-between">
-                    <div class="text-h6 font-weight-regular grey--text">
-                      ニックネーム
-                    </div> 
-                </div>
-                
-              </v-card-title>
-              <div
-                class="px-4 grey--text"
+                <v-btn
+              class="ma-2"
+              outlined
+              fab
+              color="indigo"
+              height="25" width="25"
+            >
+              <v-icon  size = "15">mdi-pencil</v-icon>
+            </v-btn>
 
-              >
-              <div class="d-flex justify-space-between "
-              >
-                <v-avatar
-                  class="ml-2 mr-4"
-                >
-                  📣 🗣
-                </v-avatar>
-              </div>
+            </div>
+            
+          </v-card-title>
+          <div
+            class="px-4 grey--text"
 
-                <div class="introduction"> 自己紹介をしてみてください <br>
-                  ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</div>
-              </div>
+          >
+          <div class="d-flex justify-space-between "
+          >
+            <v-avatar
+              class="ml-2 mr-4"
+            >
+              📣 🗣
+            </v-avatar>
+                <v-btn
+              class="ma-2"
+              outlined
+              fab
+              color="indigo"
+              height="25" width="25"
+            >
+              <v-icon  size = "15">mdi-pencil</v-icon>
+            </v-btn>
 
-              <v-divider class="mt-6 mx-4"></v-divider>
-
-              <v-card-text>
-
-                <v-chip
-                  class="mr-2 mb-2"
-                >
-                  <v-icon left>
-                    mdi-domain
-                  </v-icon>
-                  大学
-                </v-chip>
-                <v-chip class="mr-2 mb-2">
-                  <v-icon left>
-                    mdi-school
-                  </v-icon>
-                学年
-                </v-chip>
-                <v-chip class="mr-2 mb-2"
-                >
-                  <v-icon left>
-                    mdi-school-outline
-                  </v-icon>
-                  専門
-                </v-chip>
-                <v-chip class="mr-2 mb-2">
-                  <v-icon left>
-                    mdi-baseball-bat
-                  </v-icon>
-                サークル
-                </v-chip>
-                <v-list>
-                    <v-list-group
-                      v-for="item in items_1"
-                      :key="item.title"
-                      v-model="item.active"
-                      :prepend-icon="item.action"
-                      no-action
-                    >
-                      <template v-slot:activator>
-                        <v-list-item-content>
-                          <v-list-item-title v-text="item.title"></v-list-item-title>
-                        </v-list-item-content>
-                      </template>
-
-                      <v-list-item
-                        v-for="child in item.items"
-                        :key="child.title"
-                      >
-                        <v-list-item-content>
-                          <v-list-item-title v-text="child.title"></v-list-item-title>
-                        </v-list-item-content>
-                      </v-list-item>
-                    </v-list-group>
-                </v-list>
-                <v-list>
-                  <v-list-group
-                    v-for="item in items_2"
-                    :key="item.title"
-                    v-model="item.active"
-                    :prepend-icon="item.action"
-                    no-action
-                  >
-                    <template v-slot:activator>
-                      <v-list-item-content>
-                        <v-list-item-title v-text="item.title"></v-list-item-title>
-                      </v-list-item-content>
-                    </template>
-
-                    <v-list-item
-                      v-for="child in item.items"
-                      :key="child.title"
-                    >
-                      <v-list-item-content>
-                        <v-list-item-title v-text="child.title"></v-list-item-title>
-                      </v-list-item-content>
-                    </v-list-item>
-                  </v-list-group>
-                </v-list>
-              </v-card-text>
 
           </div>
 
+            <div> **Write some comments for your friends! For example...** <br>
+              Hello! This is John. I'm a Sophomore in XX University. My major is tech, and I relally love pragramming. Please get along with me!</div>
+          </div>
+
+          <v-divider class="mt-6 mx-4"></v-divider>
+
+          <v-card-text>
+            <div class="d-flex justify-end">
+
+            <v-btn
+              class="ma-2"
+              outlined
+              fab
+              color="indigo"
+              height="25" width="25"
+            >
+              <v-icon  size = "15">mdi-pencil</v-icon>
+            </v-btn>
+            </div>
+            <v-chip
+              class="mr-2 mb-2"
+            >
+              <v-icon left>
+                mdi-domain
+              </v-icon>
+              University
+            </v-chip>
+            <v-chip class="mr-2 mb-2">
+              <v-icon left>
+                mdi-school
+              </v-icon>
+            Grade
+            </v-chip>
+            <v-chip class="mr-2 mb-2"
+            >
+              <v-icon left>
+                mdi-school-outline
+              </v-icon>
+              Major
+            </v-chip>
+            <v-chip class="mr-2 mb-2">
+              <v-icon left>
+                mdi-baseball-bat
+              </v-icon>
+            Club activity
+            </v-chip>
+            <v-list>
+      <v-list-group
+        v-for="item in items_1"
+        :key="item.title"
+        v-model="item.active"
+        :prepend-icon="item.action"
+        no-action
+      >
+        <template v-slot:activator>
+          <v-list-item-content>
+            <v-list-item-title v-text="item.title"></v-list-item-title>
+          </v-list-item-content>
+        </template>
+
+        <v-list-item
+          v-for="child in item.items"
+          :key="child.title"
+        >
+          <v-list-item-content>
+            <v-list-item-title v-text="child.title"></v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list-group>
+    </v-list>
+     <v-list>
+      <v-list-group
+        v-for="item in items_2"
+        :key="item.title"
+        v-model="item.active"
+        :prepend-icon="item.action"
+        no-action
+      >
+        <template v-slot:activator>
+          <v-list-item-content>
+            <v-list-item-title v-text="item.title"></v-list-item-title>
+          </v-list-item-content>
+        </template>
+
+        <v-list-item
+          v-for="child in item.items"
+          :key="child.title"
+        >
+          <v-list-item-content>
+            <v-list-item-title v-text="child.title"></v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list-group>
+    </v-list>
+          </v-card-text>
         </v-card>
       </div>
       
@@ -175,15 +192,15 @@
       items_1: [
         {
           action: 'mdi-account-heart-outline',
-          items: [{ title: 'サッカー'}, {title: 'ゲーム'}, {title: '映画'}],
-          title: '趣味',
+          items: [{ title: 'Soccer'}, {title: 'Game'}, {title: 'Movie'}],
+          title: 'Favorits',
         },
        ],
       items_2: [
         {
           action: 'mdi-account-supervisor-outline',
-          items: [{ title: 'マリー'}, {title: 'トム'}, {title: 'ミア'}],
-          title: '親しい友だち',
+          items: [{ title: 'Marie'}, {title: 'Tom'}, {title: 'Mia'}],
+          title: 'Close Friends',
         },
        
         
@@ -197,9 +214,6 @@
   .footer{
     font-size: 0.8rem;
     font-weight: light;
-  }
-  .introduction{
-    width: 100%;
   }
 
 </style>

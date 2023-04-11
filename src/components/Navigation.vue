@@ -29,21 +29,28 @@
 <script>
 export default {
   created() {
-    this.items.push({
-        title: "Home",
-        subtitle: "Home(テンプレ)",
-        link: "/",
-    },
-    {
-        title: "About",
-        subtitle: "About(テンプレ)",
-        link: "/about",
-    },
-    {
-        title: "Test",
-        subtitle: "Test(追加してみた)",
-        link: "/test",
-    });
+    this.items.push(
+      {
+        title: "ルーム一覧",
+        subtitle: "参加しているルーム一覧",
+        link: "/roomlist",
+      },
+      {
+        title: "開催中のイベント一覧",
+        subtitle: "現在参加できるイベントの一覧",
+        link: "/eventlist",
+      },
+      {
+        title: "自分のカード",
+        subtitle: "自分の自己紹介カード",
+        link: "/my-card",
+      },
+      {
+        title: "交換カード一覧",
+        subtitle: "これまでに交換した自己紹介カード一覧",
+        link: "/cardlist",
+      }
+    );
   },
   data() {
     return {
@@ -53,7 +60,7 @@ export default {
   },
   methods: {
     to(link) {
-        this.$router.push({ path: link });
+      this.$router.push({ path: link });
     },
     drawerFlip() {
       this.drawer = !this.drawer;

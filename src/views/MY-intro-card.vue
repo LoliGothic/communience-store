@@ -21,7 +21,6 @@
               >
                 <!-- @click="turnEdit" -->
                 <v-icon>mdi-pencil</v-icon>
-
               </v-btn>
             </v-card-edit>
           </v-img>
@@ -39,6 +38,7 @@
             </div>
             
           </v-name>
+
           <div
             class="px-4 grey--text"
 
@@ -184,6 +184,7 @@
       // },
     
     
+
   }
 </script>
 
@@ -192,4 +193,5 @@
     font-size: 0.8rem;
     font-weight: light;
   }
+
 </style>

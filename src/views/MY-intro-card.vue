@@ -1,4 +1,3 @@
-
 <template>
   <v-app>
 
@@ -12,39 +11,34 @@
             src="https://cdn.vuetifyjs.com/images/cards/house.jpg"
             :aspect-ratio="16/9"
           >
+            <v-card-edit class="fill-width">
+              <v-btn
+                dark
+                icon
+                class = "ml-4 mt-3"
+                id = "button"
+                to = "/edit-page"
+              >
+                <!-- @click="turnEdit" -->
+                <v-icon>mdi-pencil</v-icon>
+              </v-btn>
+            </v-card-edit>
           </v-img>
-          <v-card-title class = "d-flex flex-column align-center justify-space-between">
+          <v-name class = "d-flex flex-column align-center justify-space-between">
             <div class="d-flex justify-between">
             <div class="text-h4 mb-2">
-              My name is here.
+              Friend's name here.
             </div>
-              <v-btn
-          class="ma-2"
-          outlined
-          x-small
-          fab
-          color="indigo"
-        >
-          <v-icon>mdi-pencil</v-icon>
-        </v-btn>
+
             </div>
             <div class="d-flex justify-space-between">
                 <div class="text-h6 font-weight-regular grey--text">
                   Nickname
                 </div>
-                <v-btn
-              class="ma-2"
-              outlined
-              fab
-              color="indigo"
-              height="25" width="25"
-            >
-              <v-icon  size = "15">mdi-pencil</v-icon>
-            </v-btn>
-
             </div>
             
-          </v-card-title>
+          </v-name>
+
           <div
             class="px-4 grey--text"
 
@@ -56,17 +50,6 @@
             >
               📣 🗣
             </v-avatar>
-                <v-btn
-              class="ma-2"
-              outlined
-              fab
-              color="indigo"
-              height="25" width="25"
-            >
-              <v-icon  size = "15">mdi-pencil</v-icon>
-            </v-btn>
-
-
           </div>
 
             <div> **Write some comments for your friends! For example...** <br>
@@ -77,16 +60,6 @@
 
           <v-card-text>
             <div class="d-flex justify-end">
-
-            <v-btn
-              class="ma-2"
-              outlined
-              fab
-              color="indigo"
-              height="25" width="25"
-            >
-              <v-icon  size = "15">mdi-pencil</v-icon>
-            </v-btn>
             </div>
             <v-chip
               class="mr-2 mb-2"
@@ -176,37 +149,42 @@
 </template>
 
 <script>
+  // import Edit from "./Card-edit.vue"
   export default {
-    methods: {
-      alarm () {
-        alert('Turning on alarm...')
-      },
-      blinds () {
-        alert('Toggling Blinds...')
-      },
-      lights () {
-        alert('Toggling lights...')
-      },
-    },
+    // props:["result"],
+    // components:{
+    //   'Edit':Edit
+    // },
      data: () => ({
-      items_1: [
-        {
-          action: 'mdi-account-heart-outline',
-          items: [{ title: 'Soccer'}, {title: 'Game'}, {title: 'Movie'}],
-          title: 'Favorits',
-        },
-       ],
-      items_2: [
-        {
-          action: 'mdi-account-supervisor-outline',
-          items: [{ title: 'Marie'}, {title: 'Tom'}, {title: 'Mia'}],
-          title: 'Close Friends',
-        },
-       
-        
-      ],
-       
-    }),
+       items_1: [
+         {
+           action: 'mdi-account-heart-outline',
+           items: [{ title: 'Soccer'}, {title: 'Game'}, {title: 'Movie'}],
+           title: 'Favorits',
+         },
+        ],
+       items_2: [
+         {
+           action: 'mdi-account-supervisor-outline',
+           items: [{ title: 'Marie'}, {title: 'Tom'}, {title: 'Mia'}],
+           title: 'Close Friends',
+         },
+       ], 
+     }),
+     methods: {
+     tuenEdit(){
+        this.$router.push('./Card-edit.vue')
+    }
+  },
+      // methods: {
+      //   setContentID(contentID) {
+      //     console.log(contentID)
+      //     this.$store.commit("setContentID", contentID)
+      //   }
+      // },
+    
+    
+
   }
 </script>
 

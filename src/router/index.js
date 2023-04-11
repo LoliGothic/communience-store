@@ -1,5 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Home from '../views/Home.vue'
+import Test from '../views/Test.vue'
+import Friend from '../views/FRIENDS-intro-card.vue'
 import RoomList from '../views/RoomList.vue'
 import EventList from '../views/EventList.vue'
 import CardList from '../views/CardList.vue'
@@ -51,9 +54,9 @@ const routes = [
     component:Card_FRIENDS
   },
   {
-    path: '/my-card',
-    name: 'my-card',
-    component: Card_MY
+    path: '/friend-card',
+    name: 'friend-card',
+    component: Friend
   },
   {
     path: '/edit',

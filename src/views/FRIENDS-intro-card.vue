@@ -35,13 +35,13 @@
               <v-card-title class = "d-flex flex-column align-center justify-space-between">
                 <div class="d-flex justify-between">
                 <div class="text-h4 mb-2">
-                  {{ $route.query.friendname }}
+                  Friend's name here.
                 </div>
                   
                 </div>
                 <div class="d-flex justify-space-between">
                     <div class="text-h6 font-weight-regular grey--text">
-                      ニックネーム
+                      Nickname
                     </div> 
                 </div>
                 
@@ -59,8 +59,8 @@
                 </v-avatar>
               </div>
 
-               <div class="introduction"> 自己紹介をしてみてください <br>
-                  ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</div>
+                <div> **Write some comments for your friends! For example...** <br>
+                  Hello! This is John. I'm a Sophomore in XX University. My major is tech, and I relally love pragramming. Please get along with me!</div>
               </div>
 
               <v-divider class="mt-6 mx-4"></v-divider>
@@ -73,26 +73,26 @@
                   <v-icon left>
                     mdi-domain
                   </v-icon>
-                  大学
+                  University
                 </v-chip>
                 <v-chip class="mr-2 mb-2">
                   <v-icon left>
                     mdi-school
                   </v-icon>
-                学年
+                Grade
                 </v-chip>
                 <v-chip class="mr-2 mb-2"
                 >
                   <v-icon left>
                     mdi-school-outline
                   </v-icon>
-                専門
+                  Major
                 </v-chip>
                 <v-chip class="mr-2 mb-2">
                   <v-icon left>
                     mdi-baseball-bat
                   </v-icon>
-                サークル
+                Club activity
                 </v-chip>
                 <v-list>
                     <v-list-group
@@ -174,14 +174,14 @@
       items_1: [
         {
           action: 'mdi-account-heart-outline',
-          items: [{ title: 'サッカー'}, {title: 'ゲーム'}, {title: '映画'}],
+          items: [{ title: 'Soccer'}, {title: 'Game'}, {title: 'Movie'}],
           title: 'Favorits',
         },
        ],
       items_2: [
         {
           action: 'mdi-account-supervisor-outline',
-         items: [{ title: 'マリー'}, {title: 'トム'}, {title: 'ミア'}],
+          items: [{ title: 'Marie'}, {title: 'Tom'}, {title: 'Mia'}],
           title: 'Close Friends',
         },
        

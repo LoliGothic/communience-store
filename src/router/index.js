@@ -2,8 +2,11 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Test from '../views/Test.vue'
+import Card_FRIENDS from '../views/FRIENDS-intro-card.vue'
 import Card_MY from '../views/MY-intro-card.vue'
 import Edit from '../views/Edit-page.vue'
+import RoomForm from '../views/RoomForm.vue'
+import RoomInvite from '../views/RoomInvite.vue'
 
 Vue.use(VueRouter)
 
@@ -27,6 +30,11 @@ const routes = [
     component: Test
   },
   {
+    path: '/friends-card',
+    name: 'friends-card',
+    component:Card_FRIENDS
+  },
+  {
     path: '/my-card',
     name: 'my-card',
     component: Card_MY
@@ -35,6 +43,15 @@ const routes = [
     path: '/edit',
     name: 'edit',
     component: Edit
+  },
+    path: '/roomform',
+    name: 'RoomForm',
+    component: RoomForm
+  },
+  {
+    path: '/roominvite',
+    name: 'RoomInvite',
+    component: RoomInvite
   },
 ]
 

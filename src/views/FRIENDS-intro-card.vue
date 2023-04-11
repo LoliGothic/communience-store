@@ -16,16 +16,15 @@
             <v-fab-transition
              >
                 <v-btn
-                  color="blue"
+                  color="pink"
                   fab
                   dark
                   small
                   bottom
                   left
                   class="mt-3 ml-3"
-                  to = "/edit"
                 >
-                  <v-icon>mdi-pencil</v-icon>
+                  <v-icon>mdi-heart</v-icon>
                 </v-btn>
               </v-fab-transition>
           </v-img>
@@ -36,7 +35,7 @@
               <v-card-title class = "d-flex flex-column align-center justify-space-between">
                 <div class="d-flex justify-between">
                 <div class="text-h4 mb-2">
-                  自分のカード
+                  友達のカード
                 </div>
                   
                 </div>
@@ -60,7 +59,7 @@
                 </v-avatar>
               </div>
 
-                <div class="introduction"> 自己紹介をしてみてください <br>
+               <div class="introduction"> 自己紹介をしてみてください <br>
                   ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</div>
               </div>
 
@@ -87,7 +86,7 @@
                   <v-icon left>
                     mdi-school-outline
                   </v-icon>
-                  専門
+                専門
                 </v-chip>
                 <v-chip class="mr-2 mb-2">
                   <v-icon left>
@@ -176,14 +175,14 @@
         {
           action: 'mdi-account-heart-outline',
           items: [{ title: 'サッカー'}, {title: 'ゲーム'}, {title: '映画'}],
-          title: '趣味',
+          title: 'Favorits',
         },
        ],
       items_2: [
         {
           action: 'mdi-account-supervisor-outline',
-          items: [{ title: 'マリー'}, {title: 'トム'}, {title: 'ミア'}],
-          title: '親しい友だち',
+         items: [{ title: 'マリー'}, {title: 'トム'}, {title: 'ミア'}],
+          title: 'Close Friends',
         },
        
         
@@ -197,9 +196,6 @@
   .footer{
     font-size: 0.8rem;
     font-weight: light;
-  }
-  .introduction{
-    width: 100%;
   }
 
 </style>
